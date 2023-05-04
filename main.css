@@ -1,0 +1,146 @@
+:root {
+  --main-colro: #2196f3;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: tahoma, arial;
+}
+.game {
+  background-color: #eee;
+  min-height: 100vh;
+}
+.container {
+  margin: auto;
+  max-width: 900px;
+}
+.container.blur {
+  -webkit-filter: blur(6px);
+  filter: blur(6px);
+}
+.name {
+  background-color: var(--main-colro);
+  padding: 20px;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+}
+.message {
+  background-color: white;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 6px;
+  text-align: center;
+}
+.message span {
+  font-weight: bold;
+  color: #009688;
+}
+.message span::before {
+  content: "[ ";
+}
+.message span::after {
+  content: " ]";
+}
+.start {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #009688;
+  color: white;
+  padding: 20px;
+  cursor: pointer;
+  margin: 15px auto;
+  width: 85%;
+}
+.the-word {
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  color: var(--main-colro);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.input {
+  margin: 15px auto;
+  width: 85%;
+  display: block;
+  padding: 15px;
+  border: 3px solid var(--main-colro);
+  font-size: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 6px;
+  caret-color: var(--main-colro);
+}
+.input:focus {
+  outline: none;
+}
+.upcoming-words {
+  background-color: white;
+  margin: 15px 0;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.upcoming-words div {
+  background-color: var(--main-colro);
+  color: white;
+  font-weight: bold;
+  margin: 4px;
+  padding: 10px;
+  border-radius: 6px;
+}
+.control {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 15px;
+}
+.control span {
+  font-weight: bold;
+  color: #009688;
+}
+.finsh {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  padding: 15px;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 59%);
+  background-color: #eee;
+  width: 70%;
+  border: 1px solid var(--main-colro);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: none;
+}
+.finsh .good {
+  color: var(--main-colro);
+}
+.finsh .bad {
+  color: red;
+}
+.finsh button {
+  display: block;
+  padding: 5px 10px;
+  width: 100px;
+  height: 30px;
+  line-height: 15px;
+  font-weight: bold;
+  color: white;
+  background-color: var(--main-colro);
+  border: none;
+  border-radius: 10px;
+  margin: 20px auto;
+  cursor: pointer;
+}
